@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;      /* Tells the body to fill the entire screen height */
+  overflow-x: hidden;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+  
+  background-image: url('https://image.api.genai.google/v1/projects/image_5.png');
+  background-size: cover;
+  background-position: center bottom; 
+  background-repeat: no-repeat;
+  background-color: #0b0c10;
+}
+
+header {
+  width: 100%;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.Sign-up,.Home,.About-us,.Features {
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logo-name{
+  color: #994dcc;
+}
+
+.hero{
+  margin-top: 50px;
+  height: 400px;
+  max-width: 650px;
+  padding: 7%;
+}
+.hero-title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.hero-desc{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
