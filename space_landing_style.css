@@ -10,25 +10,48 @@ body {
   overflow-x: hidden;
   color: white;
   font-family: sans-serif;
-  background-image: url('space_landing_images/Gemini_Generated_Image_obmz9oobmz9oobmz.png');
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
   background-color: #0b0c10;
 }
 
-header {
-  width: 100%;
-  padding: 20px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+  padding: 15px 40px;
+  box-sizing: border-box;
+}
+
+.navbar{
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px); /*isko llikha jaata hai blur effect show ho transparent karne ke baad;*/ 
+  -webkit-backdrop-filter: blur(12px);/*yemere smjh nhi aaya hai*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.nav-right-side button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7); 
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-right-side button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
 }
 
 .nav-left-side {
@@ -43,60 +66,83 @@ header {
   gap: 40px;
   margin-left: auto;
 }
+.Sign-up {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 40px;
+}
+
+.Sign-up:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
 
 .logo {
   height: 40px;
   width: auto;
   object-fit: contain;
-}
-
-.Sign-up, .Home, .About-us, .Features {
-  border: 1px solid white;
-  padding: 8px 20px;
   border-radius: 20px;
-  cursor: pointer;
 }
 
-.logo-name {
-  color: #994dcc;
-}
+    .logo-name {
+  background: linear-gradient(90deg, #ffffff 40%, #00f2fe 100%); /*ye abhi smjhna hai mujhe kyuki gradient kya value leta hai ye nhi pta */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 1.2rem;/*aise hi size dena hota hai media queries ko mantain karne ke liye */
+  letter-spacing: 1px;
+  } 
 
-.hero {
-  margin-top: 50px;
-  height: 400px;
-  max-width: 650px;
-  padding: 7%;
-}
+  .hero {
+    width: 100%;
+    min-height: 670px;
+    background-image: url('space_landing_images/spacelanding.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  .hero-left{
+    max-width: 650px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+  }
 
-.hero-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 40px;
-  margin-bottom: 8px;
-}
+  .hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
 
-.hero-desc {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-}
+  .hero-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
 
-.features {
-  margin: 20px;
-  position: relative;
-}
+  .features {
+    margin: 20px;
+    position: relative;
+  }
 
-.features > * {
+  .features > * {
   position: relative;
   z-index: 1;
 }
 
-.features-title, .features-subtitle {
+.features-title{
   color: #F8FAFC;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
   font-family: 'Orbitron', sans-serif;
-}
-
-.features-title {
   font-size: 40px;
+  text-align: center;
 }
 
 .features-subtitle {
@@ -115,23 +161,21 @@ header {
 
 .feature-card {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(rgba(255, 255, 255, 0.08), transparent);
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  transition: 0.5s;
+  background: #12141c;  
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  transition: 0.3s;
 }
 
 .feature-card:hover {
   transform: translateY(-6px);
   border-color: #38BDF8;
-  box-shadow:
-    0 0 20px rgba(56, 189, 248, 0.18),
-    0 15px 35px rgba(0, 0, 0, 0.35);
+  box-shadow: 
+    0 0 30px rgba(56, 189, 248, 0.4),
+    0 0 60px rgba(56, 189, 248, 0.15);
 }
-
 .feature-card-description {
   display: flex;
   flex-direction: column;
@@ -158,13 +202,166 @@ header {
 
 .feature-card h3 {
   color: #F8FAFC;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .feature-card p {
   color: #CBD5E1;
   line-height: 1.7;
 }
-.features-title, .features-subtitle {
+
+
+
+.mission-heading p{
+  font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
   color: #0b0c10;
   text-shadow: 0 0 10px rgba(255,255,255,0.6), 0 0 2px #fff;
+
+}
+.mission{
+  text-align: center;
+}
+
+.mission-cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-image{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  max-width: 400px;
+}
+
+.mission-description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 16px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+.mission-description:hover{
+ border-color: #38BDF8;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(56, 189, 248, 0.18);
+}
+.mars {
+  background: linear-gradient(90deg, #FF6B35, #F7931E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mission-description h3{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.heading-underline {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B35, #F7931E);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.mission-label {
+  color: #38BDF8;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.mission-description-para{
+  text-align: left;
+  color: #CBD5E1;
+  font-family: sans-serif;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.mission-content{
+  margin-left: 20px;
+}
+.mission-content ul {
+  list-style: none; /*iska matlab hai ki tum change mat karna list ke style me kuch bhi*/
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+.mission-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #CBD5E1;
+}
+
+.mission-content li::before { /*is before ka matab ki tum li se phele dot ko inject kar dena phir likhna line 
+  ye kisi bhi property ke saath hi kar skte hai iske before ye lagana aisa matlab hai iska*/
+  content: "●";
+  color: #FF6B35;
+  font-size: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #FF6B35;
+  border: 1px solid #FF6B35;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px; /*ye hamesha use kariyo warna letter chipke chipke lagte hai*/
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background: rgba(255, 107, 53, 0.1);
+  box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+}
+
+.lunar {
+  background: linear-gradient(90deg, #A8B8C8, #E8ECF1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Deep {
+  background: linear-gradient(90deg, #7B61FF, #38BDF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body {
+  background: linear-gradient(180deg, #0b0c10, #12141c, #0b0c10);
+}
+.mission{
+    background-image: url('space_landing_images/faint-stars.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.mission-image-description{
+  width: 400px;
+  flex-shrink: 0;/*isko use karna chahiye jab tujhe pkka width image ki itni chahiye hi text bada ho to image ko chota mat karo*/
+}
+
+.features{
+   background-image: url('space_landing_images/faint-stars.png');
+   background-size: cover;
+   background-position: center bottom;/*ye diya jaata hi ki crop kaha se karna hai jaise center diya hu to ye keh rha hai ki center ko tum fix rakha or crop karna ho to image ko bottom se karna */
+   background-repeat: no-repeat;
 }
