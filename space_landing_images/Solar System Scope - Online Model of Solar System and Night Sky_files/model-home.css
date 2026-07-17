@@ -1,0 +1,297 @@
+/*-----------------------------------*/
+/*SOLAR MODEL HOME*/
+/*-----------------------------------*/
+
+.solar-model-ok,
+.solar-model-run,
+.solar-model-browser,
+.solar-model-mobile {
+	position: relative;
+	width: 100%;
+	background-color: #12151d;
+	text-align: center;
+    font-family: "SF-Fourche";
+	overflow: hidden;
+}
+
+.solar-model .bg-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    background-image: url(../images/background_model.jpg);
+	background-color: #12151d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+}
+
+.solar-model video {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.solar-model video.show-on-start {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}
+
+.solar-model .model-header {
+	position: relative;
+}
+
+.solar-model .model-header .solar-h1 {
+	text-transform: uppercase;
+	font-size: 400%;
+	white-space: nowrap;
+	margin-top: 60px;
+}
+
+.solar-model .model-header .solar-h2 {
+	text-transform: uppercase;
+	color: #00b8ce;
+	text-shadow: none;
+	font-size: 110%;
+	white-space: nowrap;
+}
+
+/*-----------------------------------*/
+/*BUTTON START*/
+/*-----------------------------------*/
+
+.solar-model .model-btn-start {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 250px;
+	transform: translateY(-50%);
+	margin: 0 auto;
+}
+
+.solar-model .model-btn-start .t1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 300%;
+	line-height: 100%;
+	margin-bottom: 8px;
+}
+.solar-model .model-btn-start .t2 {
+	color: #7cffee;
+	text-transform: uppercase;
+	font-size: 100%;
+	line-height: 100%;
+	text-shadow: none;
+}
+
+/*-----------------------------------*/
+/*BUTTONS SUB*/
+/*-----------------------------------*/
+
+.solar-model .model-btns-sub {
+	position: absolute;
+	right:40px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.solar-model .model-btns-sub > * {
+	display: block;
+	height: 58px;
+	position: relative;
+}
+
+.solar-model .model-btns-sub > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.solar-model .model-btns-sub img {
+	height: 100%;
+	width: auto;
+}
+
+@media (max-width: 1000px) {
+    .solar-model-ok .model-btns-sub,
+	.solar-model-browser .model-btns-sub {
+		display: none;
+	}
+}
+
+/*-----------------------------------*/
+/*MODEL WINDOW - DESKTOP OK*/
+/*-----------------------------------*/
+
+.solar-model-ok,
+.solar-model-run {
+    height: 75vH;
+    min-height: 460px;
+}
+
+@media (max-height: 820px) {
+	.solar-model-ok .bg-image:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #12151d;
+		opacity: .35;
+	}
+}
+
+/*-----------------------------------*/
+/*MODEL WINDOW - DESKTOP BROWSER / WEBGL DISABLED*/
+/*-----------------------------------*/
+
+.solar-model-browser {
+	height: 540px;
+}
+
+.solar-model-browser .bg-image:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #12151d;
+	opacity: .35;
+}
+
+.solar-model-browser .vcenter {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.solar-model-browser .model-header .solar-h1 {
+	font-size: 300%;
+	color: #00d8ff;
+	text-shadow: none;
+	margin-top: -10px;
+}
+
+.solar-model-browser .model-header .solar-h2 {
+	font-size: 100%;
+	color: #fff;
+	line-height: 120%;
+	margin-bottom: 40px;
+}
+
+.solar-model-browser .browsers-list {
+	display: inline-block;
+    padding: 22px 44px;
+    border: 1px solid #146276;
+    background-color: rgba(0, 15, 25, .8);
+}
+
+.solar-model-browser .browsers-list > a {
+    display: block;
+}
+
+/*-----------------------------------*/
+/*MODEL WINDOW - MOBILE*/
+/*-----------------------------------*/
+
+.solar-model-mobile {
+    height: 620px;
+}
+
+.solar-model-mobile .model-header .solar-h2 {
+	margin-bottom: 90px;
+}
+
+.solar-model-mobile .model-btns-sub {
+	position: relative;
+	right: auto;
+	top: auto;
+	transform: none;
+}
+
+.solar-model-mobile .model-btns-sub > * {
+	height: 70px;
+}
+
+/*-----------------------------------*/
+/*MODEL LOADING UI*/
+/*-----------------------------------*/
+
+.solar-model-ok .solar-loading {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.solar-model-ok .solar-loading-topic {
+    font-family: 'SF-Fourche';
+    color: #00a2ff;
+    letter-spacing: 8px;
+    margin-bottom: 14px;
+    margin-left: 8px;
+    text-shadow: 0 0 6px rgb(0,100,255), 0 0 18px rgb(0,100,255);
+}
+
+.solar-model-ok .solar-loading-bar {
+    height: 4px;
+    width: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.solar-model-ok .solar-loading-bar .l,
+.solar-model-ok .solar-loading-bar .c,
+.solar-model-ok .solar-loading-bar .r {
+    height: 100%;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.solar-model-ok .solar-loading-bar .l { width: 0; animation: solar-loading-bar-animation-1 2s infinite ease-in-out; }
+.solar-model-ok .solar-loading-bar .r { width: 100%; animation: solar-loading-bar-animation-2 2s infinite ease-in-out; }
+.solar-model-ok .solar-loading-bar .c { width: 0; }
+
+@keyframes solar-loading-bar-animation-1 { 0% { width: 0; } 50% { width: 100%; } 100% { width: 0; } }
+@keyframes solar-loading-bar-animation-2 { 0% { width: 100%; } 50% { width: 0; } 100% { width: 100%; } }
+
+.solar-model-ok .solar-loading-bar .l:after,
+.solar-model-ok .solar-loading-bar .c:after,
+.solar-model-ok .solar-loading-bar .r:after {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.solar-model-ok .solar-loading-bar .l:after { left: 0; right: 8px;}
+.solar-model-ok .solar-loading-bar .c:after { left: -5px; right: -5px;}
+.solar-model-ok .solar-loading-bar .r:after { left: 8px; right: 0;}
+
+.solar-model-ok .solar-loading-bar .l:after,
+.solar-model-ok .solar-loading-bar .r:after {
+    background-color: #004bbb;
+}
+
+.solar-model-ok .solar-loading-bar .c:after {
+    background-color: #96ecff;
+    box-shadow: 0 0 4px rgb(200,240,255), 0 0 16px rgb(140,220,255), 0 0 16px rgb(140,220,255), 0 0 32px rgb(0,100,255);
+}

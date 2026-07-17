@@ -1,0 +1,554 @@
+/*-----------------------------------*/
+/*CORE*/
+/*-----------------------------------*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-size: 15px;
+    font-family: "Gotham", Helvetica, Arial, Sans-Serif;
+    font-weight: normal;
+    color: #fff;
+    background-image: url(../images/background_stars_grid.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+    overflow-x: hidden;
+	overflow-y: scroll;
+	min-width: 500px;
+}
+
+a:link, a:hover, a:visited {
+    color: #00deff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a:link, img, button {
+	outline: none;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.table {
+	display: table;
+}
+.table-row {
+	display: table-row;
+}
+.table-cell {
+	display: table-row;
+}
+
+/*-----------------------------------*/
+/*DEVICES*/
+/*-----------------------------------*/
+
+body:not(.dsk) .only-dsk,
+body:not(.dsk) .only-dsk-webgl,
+body:not(.dsk) .only-dsk-nowebgl,
+body.dsk:not(.webgl) .only-dsk-webgl,
+body.dsk.webgl .only-dsk-nowebgl,
+body:not(.mbl) .only-mbl,
+body.mbl .not-mbl {
+    display: none !important;
+}
+
+/*remove collapsing animation for bootstrap on mobile*/
+body.mbl .collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
+
+/*-----------------------------------*/
+/*HEADERS*/
+/*-----------------------------------*/
+
+.solar-h1,
+.solar-h1-max,
+.solar-h2,
+.solar-h3,
+.solar-h4 {
+    font-family: "SF-Fourche";
+    line-height: 100%;
+}
+
+.solar-h1 {
+    font-size: 360%;
+    margin-top: 70px;
+    text-shadow: 0 0 20px rgba(255,255,255,.6);
+}
+
+.solar-h1-max {
+    font-size: 500%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(255,255,255,.6);
+}
+
+@media (max-width: 767px) {
+    .solar-h1-max {
+        font-size: 360%;
+        font-weight: bold;
+    }
+}
+
+.solar-h2 {
+    font-size: 170%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(255,255,255,.6);
+}
+
+.solar-h3 {
+    font-size: 133%;
+    color: #00d0ff;
+}
+
+.solar-text-fade {
+    color: #9a9a9a;
+}
+
+.debug-table {
+	 text-align: left;
+}
+.debug-table td {
+	border: 1px solid rgba(255,255,255,.5);
+	padding: 8px;
+}
+
+/*-----------------------------------*/
+/*GLOW-BOTTOM*/
+/*-----------------------------------*/
+
+.glow-bottom-8px {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -9px;
+    height: 8px;
+    background-image: url(../images/glow_bottom_8px.png);
+}
+
+/*-----------------------------------*/
+/*AFTER HEADER AND TOPIC / MODEL */
+/*-----------------------------------*/
+
+.solar-model-bottom {
+    background-color: #002638;
+    border-top: 1px solid #085d6d;
+    height: 28px;
+}
+
+/*-----------------------------------*/
+/*SOLAR CONTENT*/
+/*-----------------------------------*/
+
+.solar-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.solar-content > .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.solar-content .row-distance-l {
+    margin-top: 90px;
+}
+
+.solar-content .row-distance-xl {
+    margin-top: 120px;
+}
+
+.sub-page-header {
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-image: url(../images/background_sub_page_header.jpg);
+    background-position: center;
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+
+.sub-page-header > .title-holder {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub-page-header > .title-holder > .title-1 {
+    font-size: 500%;
+    font-family: "SF-Fourche";
+    text-shadow: 0 0 20px rgba(255,255,255,.6);
+    line-height: 100%;
+}
+
+.sub-page-header > .title-holder > .title-1.smaller {
+    font-size: 340%;
+}
+
+.sub-page-header > .title-holder > *:first-child:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.sub-page-header > .title-holder > .smaller:first-child:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.row-padding-small {
+    padding: 7px;
+}
+
+.row-padding-small > [class*='col-'] {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+}
+
+.row-padding-small > [class*='col-'] > img {
+    align-self: flex-start;
+}
+
+.row-padding-small > [class*='col-'] > img,
+.row-padding-small > [class*='col-'] > [class*='panel-'] {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-gallery {
+    border: 2px solid #053843;
+}
+
+/*-----------------------------------*/
+/*DESIGN - PLANETS*/
+/*-----------------------------------*/
+
+.jupiter-256 {
+    width: 256px;
+    height: 256px;
+    background-image: url(../images/jupiter_256.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mars-256 {
+    width: 256px;
+    height: 256px;
+    background-image: url(../images/mars_256.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.earth-256 {
+    width: 256px;
+    height: 256px;
+    background-image: url(../images/earth_256.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*-----------------------------------*/
+/*DESIGN - FLARE*/
+/*-----------------------------------*/
+
+.row-flare {
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+.row-flare:after {
+    content: "";
+    display: block;
+    width: 1800px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/flare.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+/*-----------------------------------*/
+/*DESIGN - ROW GLOW*/
+/*-----------------------------------*/
+
+.row-glow {
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+.row-glow:after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(rgba(0,50,255,.15), rgba(0,50,255,0));
+    z-index: -99;
+}
+
+/*-----------------------------------*/
+/*COOKIES DISCLAIMER*/
+/*-----------------------------------*/
+
+.cookies-disclaimer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: #002638;
+    border-top: 1px solid #085d6d;
+    padding: 10px 20px;
+    font-size: 90%;
+}
+
+.cookies-disclaimer a {
+    padding: 8px 20px;
+    margin: -8px 0 -8px 20px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+/*-----------------------------------*/
+/*PREVIEW IMAGE*/
+/*-----------------------------------*/
+
+.image-preview-fixed {
+	overflow: hidden;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    outline: none !important;
+	display: none;
+	cursor: pointer;
+}
+
+.image-preview-fixed:before {
+	content: "";
+	display: block;
+	background-color: #161616;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.image-preview-fixed img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+/*-----------------------------------*/
+/*QUOTES*/
+/*-----------------------------------*/
+
+.quote-holder {
+	margin: 150px 0;
+	height: 200px;
+	position: relative;
+}
+
+.quote-holder .fixed-position {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0 auto;
+}
+
+.quote-holder .quote-box {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.quote-holder .quote-box > .text {
+	text-align: left;
+    font-family: "SF-Fourche";
+	color: #fff;
+    line-height: 150%;
+	font-size: 184%;
+	font-style: italic;
+}
+
+.quote-holder .quote-box > .author {
+	color: #fff;
+	font-size: 100%;
+	font-style: italic;
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+}
+
+.quote-holder .buttons {
+	width: 800px;
+	margin: 25px auto 0;
+}
+
+.quote-holder .buttons:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.quote-holder .buttons > a {
+	display: block;
+	position: relative;
+	float: left;
+	color: #82c3cf;
+	font-family: "SF-Fourche";
+	font-size: 90%;
+	text-transform: uppercase;
+	margin-right: 10px;
+	width: 130px;
+	height: 40px;
+	padding: 8px 0;
+	text-align: center;
+	overflow: hidden;
+	text-shadow: 1px 1px #000;
+}
+
+.quote-holder .buttons > a.like {
+	text-align: left;
+	background-image: url(../images/icons/like.png);
+	background-repeat: no-repeat;
+	background-position: 14px 40%;
+	background-size: 22px 18px;	
+}
+
+.quote-holder .buttons > a.next {
+}
+
+.quote-holder .buttons > a:hover {
+	color: #fff;
+}
+
+.quote-holder .buttons > a.like .like-text,
+.quote-holder .buttons > a.like .like-count {
+	position: absolute;
+	left: 30px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+    -webkit-transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.quote-holder .buttons > a.like .like-count {
+	color: #fff;
+}
+
+.quote-holder.liked .buttons > a.like {	cursor: default; }
+.quote-holder:not(.liked) .buttons > a.like { cursor: pointer; }
+
+.quote-holder.liked .buttons > a.like .like-text {
+	opacity: 0;
+	transform: translateY(-150%);
+}
+
+.quote-holder:not(.liked) .buttons > a.like .like-count {
+	opacity: 0;
+	transform: translateY(50%);
+}
+
+/*-----------------------------------*/
+/*SOLAR LAB LINES*/
+/*-----------------------------------*/
+
+.solarlab-lines {
+	display: block;
+	width: 178px;
+	height: 61px;
+	position: relative;
+}
+
+.solarlab-lines > [class*='line'] {
+
+}
+
+.solarlab-lines > [class*='line'] {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/lab/lab-diagline.png) 0px 0px no-repeat;
+	opacity: .8;
+	animation: solarlab-lines-animation 3s infinite;
+	animation-timing-function: ease-in;
+	opacity: .15;
+}
+
+.solarlab-lines > .line1 {
+	background-position: 0px 0px;
+	animation-delay: 0s;
+}
+
+.solarlab-lines > .line2 {
+	background-position: 43px 0px;
+	animation-delay: .3s;
+}
+
+.solarlab-lines > .line3 {
+	background-position: 86px 0px;
+	animation-delay: .6s;
+}
+
+
+@keyframes solarlab-lines-animation {
+     0% { opacity: .15; }
+	25% { opacity: .8; }
+	50% { opacity: .4; }
+	99% { opacity: .15; }
+}

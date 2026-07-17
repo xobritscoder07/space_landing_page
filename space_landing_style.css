@@ -365,3 +365,56 @@ body {
    background-position: center bottom;/*ye diya jaata hi ki crop kaha se karna hai jaise center diya hu to ye keh rha hai ki center ko tum fix rakha or crop karna ho to image ko bottom se karna */
    background-repeat: no-repeat;
 }
+.impact{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.statistics{
+  background-image: url('space_landing_images/statistics.png');
+  background-size: cover; /*same hi kaam hai iska jo ye img ke saath karta hai*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.statistics-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.stat-card h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.7), 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+.stat-card p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #CBD5E1;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.7), 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+.statistics::before {/*ye pura ek tarika hai text ko shi se dikane ka kyuki meri image bright hai jisse text nhi dikh rha uske liye likha hai*/
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);  /* dark overlay */
+  z-index: 0;
+}
+
+.statistics-container {
+  position: relative; /*isko relative diya hai taaki ye upar dikhe or iska z-index bhi jayda diya hai */
+  z-index: 1;
+}
+

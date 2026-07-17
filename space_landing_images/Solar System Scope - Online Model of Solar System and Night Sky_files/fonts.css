@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham/gotham-book-webfont.eot');
+    src: url('../fonts/Gotham/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/Gotham/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/Gotham/gotham-book-webfont.svg#GothamBook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: 'SF-Fourche-SC';
+    src: url('../fonts/SFFourche/SF-Fourche-SC.eot');
+    src: url('../fonts/SFFourche/SF-Fourche-SC.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SFFourche/SF-Fourche-SC.woff') format('woff'),
+         url('../fonts/SFFourche/SF-Fourche-SC.ttf') format('truetype'),
+         url('../fonts/SFFourche/SF-Fourche-SC.svg#SF-Fourche-SC') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: 'SF-Fourche';
+    src: url('../fonts/SFFourche/SF-Fourche.eot');
+    src: url('../fonts/SFFourche/SF-Fourche.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SFFourche/SF-Fourche.woff') format('woff'),
+         url('../fonts/SFFourche/SF-Fourche.ttf') format('truetype'),
+         url('../fonts/SFFourche/SF-Fourche.svg#SF-Fourche') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

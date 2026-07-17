@@ -1,0 +1,540 @@
+#footer {
+    min-height: 440px;
+    color: #fff;
+    position: relative;
+    padding-top: 10%;
+    text-align: center;
+    font-size: 90%;
+}
+
+.footer-dist-before {
+    width: 100%;
+    padding-bottom: 6.4706%;
+}
+
+#footer .footer-col-topic {
+	font-family: "SF-Fourche";
+	font-size: 133%;
+	color: #45d8ff;
+	text-transform: uppercase;
+	text-shadow: 0 0 20px #2fd7e4;
+    margin: 40px 0 20px;
+}
+#footer .footer-col-content {
+    margin: 20px 0;
+}
+#footer .footer-col-dist {
+    height: 30px;
+}
+
+#footer .footer-col-content-spacepedia {
+	display: inline-table;
+	margin-top: 0;
+}
+
+#footer .footer-col-content-spacepedia > a {
+	display: table-row;
+	position: relative;
+}
+
+#footer .footer-col-content-spacepedia > a:not(:last-child) > * {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+#footer .footer-col-content-spacepedia > a > * {
+	display: table-cell;
+	padding: 6px 20px;
+	color: #fff;
+	text-align: left;
+	position: relative;
+}
+
+#footer .footer-col-content-spacepedia > a > *:not(:last-child) {
+	padding-right: 0;
+}
+
+#footer .footer-col-content-spacepedia > a:hover > *:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -1px;
+	bottom: -1px;
+	background-color: rgba(255,255,255,.15);
+}
+
+
+/*-----------------------------------*/
+/*FOOTER BACKGROUND
+/*-----------------------------------*/
+
+#footer .footer-background {
+    z-index: -98;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+#footer .footer-background:before,
+#footer .footer-background:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+}
+
+#footer .footer-background:before {
+    background-image: url(../images/background_footer_top.png);
+    padding-bottom: 6.4706%;
+    bottom: 100%;
+}
+
+#footer .footer-background:after {
+    background-image: url(../images/background_footer_bottom.jpg);
+    padding-bottom: 19.4118%;
+    top: 0;
+}
+
+/*-----------------------------------*/
+/*FOOTER MENU
+/*-----------------------------------*/
+
+#footer .footer-menu {
+    margin-bottom: 60px;
+}
+
+#footer .footer-menu-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 133%;
+    font-family: "SF-Fourche";
+    color: #fff;
+}
+
+/*-----------------------------------*/
+/*FOOTER SOCIAL
+/*-----------------------------------*/
+
+#footer .footer-social-btns {
+
+}
+
+#footer .footer-social-btn {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin: 0 2px;
+	position: relative;
+    background-color: rgba(60, 180, 255, .2);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	border: 1px solid #64befd;
+    -webkit-transition: border 0.1s linear, background-color 0.1s linear;
+    -moz-transition: border 0.1s linear, background-color 0.1s linear;
+    -ms-transition: border 0.1s linear, background-color 0.1s linear;
+    -o-transition: border 0.1s linear, background-color 0.1s linear;
+    transition: border 0.1s linear, background-color 0.1s linear;
+}
+
+#footer .footer-social-btn:hover {
+	border: 1px solid #fff;
+    background-color: rgba(60, 180, 255, .4);
+}
+
+#footer .footer-social-btn.fb { background-image: url("../images/icons/footer_icon_fb.png"); }
+#footer .footer-social-btn.tw { background-image: url("../images/icons/footer_icon_tw.png"); }
+#footer .footer-social-btn.gp { background-image: url("../images/icons/footer_icon_gp.png"); }
+#footer .footer-social-btn.yt { background-image: url("../images/icons/footer_icon_yt.png"); }
+
+/*-----------------------------------*/
+/*FOOTER LOGO
+/*-----------------------------------*/
+
+#footer .footer-logo-line {
+	display: block;
+    position: relative;
+	height: 3px;
+    width: 210px;
+    margin: 10px auto 20px;
+	background-color: rgba(78,216,255,.15);
+}
+
+#footer .footer-logo-line:before {
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 1px;
+	bottom: 1px;
+	background-color: #1692af;
+}
+
+/*-----------------------------------*/
+/*FOOTER PRIVACY
+/*-----------------------------------*/
+
+#footer .footer-privacy {
+    font-size: 80%;
+    text-align: center;
+    padding: 30px;
+    top: -8vw;
+}
+
+#footer .footer-privacy,
+#footer .footer-privacy a {
+    color: rgb(128,128,128);
+}
+
+#footer .footer-privacy a:hover {
+	color: #fff;
+}
+
+/*-----------------------------------*/
+/*PLATFORMS*/
+/*-----------------------------------*/
+
+body.mbl #footer .footer-menu-btn.download {
+    display: none !important;
+}
+
+/*
+#footer .footer-bg {
+    z-index: -99;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -10vw;
+    bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+    
+#footer .footer-bg > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#footer .content {
+    position: relative;
+    margin: 0 auto;
+    top: -8vw;
+}
+*/
+/*-----------------------------------*/
+/*FOOTER MENU
+/*-----------------------------------*/
+/*
+#footer .menu {
+	width: 100%;
+}
+
+#footer .menu .btn {
+	padding: 0 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 133%;
+	font-family: "SF-Fourche";
+	text-transform: uppercase;
+	height: 80px;
+	line-height: 80px;
+	position: relative;
+	text-shadow: 0 0 20px #fff;
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+
+#footer .menu .btn:hover {
+	text-shadow: 0 0 10px #2fd7e4, 0 0 25px #2fd7e4, 0 0 50px #2fd7e4;
+}
+
+#footer .menu .btn.home,
+#footer .menu .btn.search {
+	padding: 0;
+	width: 80px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+}
+
+#footer .menu .btn.home {
+	background-position: center left;
+	background-image: url("../images/footer_icon_home.png");
+}
+
+#footer .menu .btn.search {
+	background-position: center right;
+	background-image: url("../images/footer_icon_search.png");
+}*/
+
+/*-----------------------------------*/
+/*FOOTER CELLS3
+/*-----------------------------------*/
+
+#footer .cells3 {
+	position: relative;
+	width: 100%;
+	margin: 20px auto 0;
+}
+
+#footer .cells3:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#footer .cells3 > .c1,
+#footer .cells3 > .c2,
+#footer .cells3 > .c3 {
+	width: 33%;
+	position: relative;
+	float: left;
+}
+
+#footer .cells3 > .c1,
+#footer .cells3 > .c2,
+#footer .cells3 > .c3 {
+	text-align: center;
+}
+
+#footer .cells3 > .c2 {
+	width: 34%;
+	color: #fff;
+}
+
+#footer .cells3 > .c3 {
+	float: right;
+}
+
+#footer .topic {
+	font-family: "SF-Fourche";
+	font-size: 133%;
+	color: #45d8ff;
+	text-transform: uppercase;
+	padding: 40px 0 20px;
+	text-shadow: 0 0 20px #2fd7e4;
+}
+
+/*-----------------------------------*/
+/*EMAIL
+/*-----------------------------------*/
+
+#footer .email {
+	color: #fff;
+	display: block;
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+
+#footer .email:hover {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+/*-----------------------------------*/
+/*SOCIAL TABLE + ICONS
+/*-----------------------------------*/
+
+#footer .table {
+	display: inline-table;
+	margin-top: 34px;
+}
+
+#footer .social .btn {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 6px;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	border: 1px solid #64befd;
+    -webkit-transition: border 0.2s linear;
+    -moz-transition: border 0.2s linear;
+    -ms-transition: border 0.2s linear;
+    -o-transition: border 0.2s linear;
+    transition: border 0.2s linear;
+}
+
+#footer .social .btn:hover {
+	border: 1px solid #b7e1ff;
+}
+
+#footer .social .btn:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(60, 180, 255, .2);
+	background:    -moz-radial-gradient(center, ellipse cover, rgba(60, 180, 255, 1) 0%, rgba(60, 180, 255, 0) 300%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(60, 180, 255, 1) 0%, rgba(60, 180, 255, 0) 300%);
+	background:         radial-gradient(ellipse at center,     rgba(60, 180, 255, 1) 0%, rgba(60, 180, 255, 0) 300%);
+	opacity: .25;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+#footer .social .btn:hover:before {
+	opacity: .5;
+}
+
+#footer .social .btn.fb { background-image: url("../images/footer_icon_fb.png"); }
+#footer .social .btn.tw { background-image: url("../images/footer_icon_tw.png"); }
+#footer .social .btn.gp { background-image: url("../images/footer_icon_gp.png"); }
+#footer .social .btn.yt { background-image: url("../images/footer_icon_yt.png"); }
+
+/*-----------------------------------*/
+/*CELLS3 MIDDLE
+/*-----------------------------------*/
+
+#footer .inove {
+	color: #45d8ff;
+}
+
+#footer .tech_progress-line {
+	width: 210px;
+	margin: 10px auto 20px;
+}
+
+/*-----------------------------------*/
+/*ENCYCLOPEDIA
+/*-----------------------------------*/
+
+#footer .encyclopedia {
+	display: inline-table;
+	text-align: left;
+	position: relative;
+}
+
+#footer .encyclopedia .row {
+	height: 27px;
+}
+
+#footer .encyclopedia .row > .cell {
+	padding: 0 10px;
+	position: relative;
+	height: 27px;
+	line-height: 27px;
+	position: relative;
+}
+
+#footer .encyclopedia .row > .cell:first-child {
+	padding-left: 20px;
+}
+
+#footer .encyclopedia .row > .cell:last-child {
+	padding-right: 20px;
+}
+
+#footer .encyclopedia .row > .cell:after {
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.2);
+}
+
+#footer .encyclopedia .row:last-child > .cell:after {
+	display: none;
+}
+
+#footer .encyclopedia .btn {
+	color: #fff;
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+    text-align:inherit;
+}
+
+#footer .encyclopedia .btn:hover {
+	text-shadow: 0 0 3px #2fd7e4, 0 0 6px #2fd7e4, 0 0 9px #2fd7e4, 0 0 18px #2fd7e4;
+}
+
+/*
+#footer .encyclopedia .btn:hover {
+	background-color: rgba(255,255,255,.15);
+}
+*/
+
+/*-----------------------------------*/
+/*RESOLUTIONS
+/*-----------------------------------*/
+
+#footer .privacy {
+    font-size: 70%;
+    text-align: center;
+    padding: 80px 0 24px;
+    top: -8vw;
+}
+
+#footer .privacy,
+#footer .privacy a {
+	color: rgb(128,128,128);	
+}
+
+#footer .privacy a:hover {
+	color: #fff;
+}
+
+/*-----------------------------------*/
+/*RESOLUTIONS
+/*-----------------------------------*/
+
+@media (max-width: 1459px) {
+	#footer .menu .btn {
+		padding: 0;
+	}
+}
+
+@media (max-width: 1259px) {
+	#footer .menu .btn {
+		font-size: 100%;
+	}
+	
+	#footer .menu .btn.home,
+	#footer .menu .btn.search {
+		width: 60px;
+	}
+}
+
+
+#footer .contacts,
+#footer .logo,
+#footer .spacepedia {
+    text-align: center;
+}
+
+.content .contact_us_wrapper,
+.content .footer_logo_wrapper,
+.content .spacepedia_wrapper {
+    text-align: center;
+}
