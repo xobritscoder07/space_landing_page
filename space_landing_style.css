@@ -187,8 +187,9 @@ body {
 .feature-card-description img {
   width: 100%;
   height: 160px;
-  object-fit: contain;
+  object-fit:contain;
   border-radius: 16px;
+  filter: brightness(0.85) contrast(1.1);
 }
 
 .feature-card-description p {
@@ -308,7 +309,7 @@ body {
   font-size: 12px;
 }
 
-.button {
+.button-class{
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -326,7 +327,7 @@ body {
   margin-top: 15px;
 }
 
-.button:hover {
+.button-class:hover {
   background: rgba(255, 107, 53, 0.1);
   box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
 }
@@ -417,4 +418,108 @@ body {
   position: relative; /*isko relative diya hai taaki ye upar dikhe or iska z-index bhi jayda diya hai */
   z-index: 1;
 }
+.footer{
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.footer-logo{
+  height: 90px;
+  object-fit: cover;
+  width: 90px;/*isme width 100% isliye nhi diya hai kyuki vo puri width le lega screen ye shi nhi hai reponsive desingn ke wakt tu alag alag screen ke liye isko set kar liyo*/
+  border-radius: 50%;
+  margin-left: 50px;
+}
 
+.footer-left-section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 400px;
+}
+.footer-top{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-top: 10px;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.logo-div{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 20px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.icons img{
+  width: 100%;
+  object-fit: contain;
+  height: 50px;
+  border-radius: 30px;
+  }
+
+.icons img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+    opacity: 0.7;
+}
+.icons img:hover {
+    opacity: 1;
+    transform: scale(1.1) translateY(-2px);
+    filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.3));
+}
+.logo-div p{
+  font-family: 'Venite Adoremus', cursive;
+  font-weight: 500;
+  font-size: 20px;
+  color: #B8B8B8;
+}
+.join-us{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #FAF9F6;
+  border: 1px solid #FAF9F6;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px; /*ye hamesha use kariyo warna letter chipke chipke lagte hai*/
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(250, 249, 246, 0.3);
+  transition: 0.3s;
+  margin-top: 15px;
+  width: 200px;
+}
+
+.join-us:hover{
+  background: rgba(250, 249, 246, 0.1);
+  box-shadow: 0 0 25px rgba(250, 249, 246, 0.3);
+}
+.footer-left-section p , .footer-left-section h3 {
+  font-family: 'Venite Adoremus', cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.footer-links p {
+  color: #B8B8B8;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
